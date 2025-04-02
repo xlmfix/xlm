@@ -15,13 +15,19 @@
               "https://apt.bingner.com/debs/1443.00/com.ex.substitute_2.3.0_iphoneos-arm.deb",
               "https://apt.procurs.us/pool/main/d/dhinakg-keyring/dhinakg-keyring_2023.04.02_all.deb"
             ],
-            "condition":
+            "condition": "rootful"  // ¡Campo completado!
           }
         ],
         "repositories": [
           {
             "Types": "deb",
             "URIs": "https://apt.bingner.com",
+            "Suites": "./",
+            "Components": ""
+          },
+          {
+            "Types": "deb",
+            "URIs": "https://repo.palera.in",  // Añadido repo esencial
             "Suites": "./",
             "Components": ""
           }
@@ -44,6 +50,12 @@
           {
             "Types": "deb",
             "URIs": "https://ellekit.space",
+            "Suites": "./",
+            "Components": ""
+          },
+          {
+            "Types": "deb",
+            "URIs": "https://repo.palera.in",  // Añadido repo esencial
             "Suites": "./",
             "Components": ""
           }
