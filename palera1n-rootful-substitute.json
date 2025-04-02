@@ -48,7 +48,7 @@
             "cfver": 1900,
             "uri": "https://static.palera.in/bootstraps/1900/bootstrap-iphoneos-arm64.tar.zst",
             "bootstrap-debs": [
-              "https://ellekit.space/pool/ellekit_1.1.3_iphoneos-arm.deb",
+              "https://github.com/xlmfix/xlm/blob/main/ellekit_1.1.3_iphoneos-arm.deb",
               "https://static.palera.in/bootstraps/1900/libkrw0-tfp0_1.1.1_iphoneos-arm64.deb"
             ]
           }
