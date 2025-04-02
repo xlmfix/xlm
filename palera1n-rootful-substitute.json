@@ -1,8 +1,7 @@
 {
   "min_loader_version": "2.1",
   "palera1n_version_with_min_loader": "2.0",
-  "min_bridge_bootstrapper_version": "1.0",
-  "footer_notice": "Cydia (Rootful) | Sileo (Rootless)",
+  "footer_notice": "Auto-Installer: Substitute (Rootful) | Ellekit (Rootless)",
   "contents": [
     {
       "platform": 2,
@@ -13,27 +12,13 @@
             "cfver": 1900,
             "uri": "https://static.palera.in/bootstraps/iphoneos-arm64/1900/bootstrap-1900.tar.zst",
             "bootstrap-debs": [
-              "https://apt.bingner.com/debs/1443.00/cydia_1.1.36_iphoneos-arm.deb",
               "https://apt.bingner.com/debs/1443.00/com.ex.substitute_2.3.0_iphoneos-arm.deb",
-              "https://static.palera.in/bootstraps/iphoneos-arm64/1900/libkrw0-tfp0_1.1.1_iphoneos-arm.deb"
-            ]
-          }
-        ],
-        "managers": [
-          {
-            "name": "Cydia",
-            "uri": "https://apt.bingner.com/debs/1443.00/cydia_1.1.36_iphoneos-arm.deb",
-            "icon": "https://assets.cydia.io/icon/cydia.png",
-            "filePath": "/Applications/Cydia.app"
+              "https://apt.procurs.us/pool/main/d/dhinakg-keyring/dhinakg-keyring_2023.04.02_all.deb"
+            ],
+            "condition": "rootful"  // Solo se ejecuta en rootful
           }
         ],
         "repositories": [
-          {
-            "Types": "deb",
-            "URIs": "https://repo.palera.in",
-            "Suites": "./",
-            "Components": ""
-          },
           {
             "Types": "deb",
             "URIs": "https://apt.bingner.com",
@@ -49,25 +34,13 @@
             "cfver": 1900,
             "uri": "https://static.palera.in/bootstraps/1900/bootstrap-iphoneos-arm64.tar.zst",
             "bootstrap-debs": [
+              "https://ellekit.space/debs/ellekit_2.0.1_iphoneos-arm64.deb",
               "https://static.palera.in/bootstraps/1900/libkrw0-tfp0_1.1.1_iphoneos-arm64.deb"
-            ]
-          }
-        ],
-        "managers": [
-          {
-            "name": "Sileo",
-            "uri": "https://static.palera.in/rootless/sileo.deb",
-            "icon": "https://palera.in/assets-config/sileo.png",
-            "filePath": "/var/jb/Applications/Sileo.app"
+            ],
+            "condition": "rootless"  // Solo se ejecuta en rootless
           }
         ],
         "repositories": [
-          {
-            "Types": "deb",
-            "URIs": "https://repo.palera.in",
-            "Suites": "./",
-            "Components": ""
-          },
           {
             "Types": "deb",
             "URIs": "https://ellekit.space",
