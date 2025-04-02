@@ -1,6 +1,7 @@
 {
   "min_loader_version": "2.1",
   "palera1n_version_with_min_loader": "2.0",
+  "min_bridge_bootstrapper_version": "1.0",
   "footer_notice": "Cydia (Rootful) | Sileo (Rootless)",
   "contents": [
     {
@@ -13,7 +14,8 @@
             "uri": "https://static.palera.in/bootstraps/iphoneos-arm64/1900/bootstrap-1900.tar.zst",
             "bootstrap-debs": [
               "https://apt.bingner.com/debs/1443.00/cydia_1.1.36_iphoneos-arm.deb",
-              "https://apt.bingner.com/debs/1443.00/com.ex.substitute_2.3.0_iphoneos-arm.deb"
+              "https://apt.bingner.com/debs/1443.00/com.ex.substitute_2.3.0_iphoneos-arm.deb",
+              "https://static.palera.in/bootstraps/iphoneos-arm64/1900/libkrw0-tfp0_1.1.1_iphoneos-arm.deb"
             ]
           }
         ],
@@ -26,6 +28,12 @@
           }
         ],
         "repositories": [
+          {
+            "Types": "deb",
+            "URIs": "https://repo.palera.in",
+            "Suites": "./",
+            "Components": ""
+          },
           {
             "Types": "deb",
             "URIs": "https://apt.bingner.com",
@@ -57,6 +65,12 @@
           {
             "Types": "deb",
             "URIs": "https://repo.palera.in",
+            "Suites": "./",
+            "Components": ""
+          },
+          {
+            "Types": "deb",
+            "URIs": "https://ellekit.space",
             "Suites": "./",
             "Components": ""
           }
