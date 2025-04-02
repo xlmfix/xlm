@@ -1,0 +1,81 @@
+{
+  "min_loader_version": "2.1",
+  "palera1n_version_with_min_loader": "2.0",
+  "min_bridge_bootstrapper_version": "1.0",
+  "footer_notice": "Cydia (Rootful) | Sileo (Rootless)",
+  "contents": [
+    {
+      "platform": 2,
+      "rootful": {
+        "dotfile": "/.procursus_strapped",
+        "bootstraps": [
+          {
+            "cfver": 1900,
+            "uri": "https://static.palera.in/bootstraps/iphoneos-arm64/1900/bootstrap-1900.tar.zst",
+            "bootstrap-debs": [
+              "https://apt.bingner.com/debs/1443.00/cydia_1.1.36_iphoneos-arm.deb",
+              "https://apt.bingner.com/debs/1443.00/com.ex.substitute_2.3.0_iphoneos-arm.deb",
+              "https://static.palera.in/bootstraps/iphoneos-arm64/1900/libkrw0-tfp0_1.1.1_iphoneos-arm.deb"
+            ]
+          }
+        ],
+        "managers": [
+          {
+            "name": "Cydia",
+            "uri": "https://apt.bingner.com/debs/1443.00/cydia_1.1.36_iphoneos-arm.deb",
+            "icon": "https://assets.cydia.io/icon/cydia.png",
+            "filePath": "/Applications/Cydia.app"
+          }
+        ],
+        "repositories": [
+          {
+            "Types": "deb",
+            "URIs": "https://repo.palera.in",
+            "Suites": "./",
+            "Components": ""
+          },
+          {
+            "Types": "deb",
+            "URIs": "https://apt.bingner.com",
+            "Suites": "./",
+            "Components": ""
+          }
+        ]
+      },
+      "rootless": {
+        "dotfile": "/var/jb/.procursus_strapped",
+        "bootstraps": [
+          {
+            "cfver": 1900,
+            "uri": "https://static.palera.in/bootstraps/1900/bootstrap-iphoneos-arm64.tar.zst",
+            "bootstrap-debs": [
+              "https://static.palera.in/bootstraps/1900/libkrw0-tfp0_1.1.1_iphoneos-arm64.deb"
+            ]
+          }
+        ],
+        "managers": [
+          {
+            "name": "Sileo",
+            "uri": "https://static.palera.in/rootless/sileo.deb",
+            "icon": "https://palera.in/assets-config/sileo.png",
+            "filePath": "/var/jb/Applications/Sileo.app"
+          }
+        ],
+        "repositories": [
+          {
+            "Types": "deb",
+            "URIs": "https://repo.palera.in",
+            "Suites": "./",
+            "Components": ""
+          },
+          {
+            "Types": "deb",
+            "URIs": "https://ellekit.space",
+            "Suites": "./",
+            "Components": ""
+          }
+        ]
+      }
+    }
+  ]
+}
