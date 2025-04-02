@@ -37,7 +37,7 @@
               "https://ellekit.space/debs/ellekit_2.0.1_iphoneos-arm64.deb",
               "https://static.palera.in/bootstraps/1900/libkrw0-tfp0_1.1.1_iphoneos-arm64.deb"
             ],
-            "condition": "rootless"  // Solo se ejecuta en rootless
+            "condition": "rootless"
           }
         ],
         "repositories": [
